@@ -1,0 +1,242 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+body{
+    padding: 0;
+}
+.head{
+position: relative;
+height: 280px;
+}
+.head .image{
+    width: 100%;
+}
+.cycle{
+    width: 120px ;
+    height: 120px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 100;
+    border: 10px solid rgb(54, 152, 149);
+   
+}
+.scycle{
+    width: 55px ;
+    height: 55px;
+    border: 6px solid rgb(54, 152, 149);
+    border-radius: 50%;
+    position: relative;
+   
+}
+.cycles{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+.scycle2{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position:relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border: 6px solid rgb(54, 152, 149);
+    border-right-color: transparent;
+}
+.cycle2{
+    width: 70%;
+    height: 70%;
+    border-radius: 50%;
+    position:relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border: 10px solid rgb(54, 152, 149);
+    border-right-color: transparent;
+}
+h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    margin: 0% 10%;
+    opacity: 0.7;
+}
+ p{
+        text-align: center;
+        margin:6% 10%;
+        font-size: 17px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        opacity: 0.4;
+    }
+    .downloads{
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        flex-direction: column;
+        margin-bottom: 50px;
+    }
+    .downloads h4{
+        font-size:18px;
+    }
+    .ios, .mac{
+        width: 90%;
+    }
+    .iosb{
+        width: 100%;
+        background-color:rgb(81, 183, 180) ;
+        box-shadow: 0 5px 30px rgb(81, 183, 180,0.5);
+    }
+    .macb{
+        background-color: rgb(151, 73, 223);
+        box-shadow: 0px 5px 30px  rgb(151, 73, 223,0.5);
+    }
+    button:hover {
+        transform:scale(1.05);
+    }
+    i:hover{
+        transform:scale(1.2);
+        color:green;
+    }
+    .macb , .iosb{
+        width: 100%;
+        height: 50px;
+        border-radius: 40px;
+        border: none;
+        color: white;
+    }
+    
+    .flexdiv{
+        margin-top: 50px;
+    }
+    @media (min-width:390px) {
+       
+        .flexdiv{
+            display: flex;
+        }
+        .flexdiv  .image img{
+            height: 600px;
+          width: 800px;
+        }
+
+        .flexdiv {
+            margin-left: 10%;
+            overflow: hidden;
+            width: 90%;
+        }
+        
+        h1{
+            margin: 0% 0%;
+           }
+           p{
+            margin:6% 20%;
+           
+            text-align: center;
+            
+           }
+           .content p{
+            margin: 0;
+           }
+           .articalsdiv p,.articalsdiv h1{
+            text-align: left;
+            margin: 10% 15%;
+            
+           }
+        .downloads{
+            flex-direction: row;
+            justify-content: center;
+            width: 35%;
+        }
+        .disktopdiv{
+           display: flex;
+           flex-direction: column;
+           align-items: center;
+        }
+       
+          .head  .image{
+                content: url(bg-header-desktop.png);
+            }
+            .device{
+                text-align: center;
+                width: 70%;
+                margin-left: 15%;
+            }
+            .logo1{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+            }
+            .logo2{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                 gap: 50px;
+            }
+            .downdiv{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+            }
+            .copy{
+                display: flex;
+                justify-content: space-between;
+               height: 2vh;
+            }
+            .content{
+                display: flex;
+                gap: 30%;
+            }
+            .content p{
+        width: max-content;
+        margin: 10px;
+            }
+    }
+    
+    .flexdiv .image , .flexdiv .image img{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .access{
+        margin-top: 100px;
+    }
+    .device img{
+        width: 100%;
+        margin-bottom: 150px;
+    }
+    .Super p ,.Super h1{
+        margin: 10px;
+    }
+    .logo1{
+        margin-top: 60px;
+    }
+    .logo1 h3{
+text-align: center;
+font-weight: 1000;
+opacity: 0.7;
+    }
+    .logo2 {
+        margin-top: 60px;
+       text-align: center;
+    }
+    .logo2 img{
+        margin: 100px 0;
+    }
+    .copy{
+        background-color: rgba(165, 160, 153, 0.11);
+        width:80% ;
+        margin: 50px auto;
+        padding: 4%;
+        height: max-content;
+    }
+    .icons{
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+    }
+    .ios:hover ,.downloads:hover{
+       transform: translate(1.2);
+    }
